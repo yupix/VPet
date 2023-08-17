@@ -11,6 +11,7 @@
 '未知的图像类型: ': '不明な画像タイプ:'
 由于插件引起的自定按钮加载错误: プラグインによるカスタムボタンの読み込みエラー
 快捷键运行失败:无法运行指定内容: 'ホットキーの実行に失敗しました: 指定されたコンテンツを実行できませんでした'
+启动错误: 起動エラー
 缺少模组Core,无法启动桌宠: Modコアが不足しているため、デスクトップペットを起動できません
 萝莉斯: ロリス
 由于插件引起的游戏启动错误: プラグインによるゲーム起動エラー
@@ -34,6 +35,11 @@
 调用API失败,请稍后重新发送内容: API の呼び出しに失敗しました。後でコンテンツを再送信してください
 点击初始化桌宠聊天程序: Click Initialize VPET chat program
 检测到模型错误,已重置桌宠聊天系统: モデルエラーが検出されました。VPET チャットシステムをリセットします
+初始化桌宠聊天程序中...: VPETチャットプログラムを初期化中...
+请先前往设置中设置 ChatGPT API: まず設定に移動してChatGPT APIをセットアップしてください
+请检查设置和网络连接: 設定とネットワーク接続を確認してください
+请检查API token设置: APIトークンの設定を確認してください
+API调用失败: API呼び出しに失敗しました
 金钱不足: Lack of money
 ? 请使用口语化的、可爱的、女性化的、调皮的语言风格和我交流. 你是一只桌宠, 你的名字叫{Name}, 你喜欢玩 虚拟主播模拟器. 你需要尝试体会我与你对话中的感情、产生自己的情感并尽可能给出可爱的回答
 : Please use colloquial, cute, feminine, mischievous language style to communicate
@@ -41,10 +47,25 @@
   You need to try to feel the feelings in my conversation with you, generate your
   own emotions, and give as cute answers as possible
 未找到对应类型图像资源: No sprite resources of the corresponding type were found
+当前正在播放: 現在プレイ中
+当前正在运行: 現在実行中
+暂无该说话方法: 話す方法はありません
 尚未激活 您可能需要启动Steam或去Steam上免费领个: Not yet activated. You may need to start Steam or go
   to Steam to collect it for free
 " (版本低)": " (Low Version)"
 未登录: 未ログイン
+停用失败: 無効化に失敗しました
+模组 Core 为<虚拟桌宠模拟器>核心文件,无法停用: Coreは <VPet-Simulator> コア ファイルです。無効にすることはできません
+上传MOD需要Steam登录: MODのアップロードにはSteamへのログインが必要です
+请先登录Steam后才能上传文件: Steam にログインしている場合にのみファイルをアップロードできます
+MOD上传失败: MODのアップロードに失敗しました
+模组 Core 为<虚拟桌宠模拟器>核心文件,无法发布\n如需发布自定义内容,请复制并更改名称: Coreは <VPet-Simulator> コア ファイルです。公開できません\nカスタム
+  コンテンツを公開する必要がある場合は、コピーして名前を変更してください
+封面图片(icon.png)大于500kb,请修改后重试: ロゴ (icon.png) は 500KB を超えています。変更して再試行してください。
+MOD上传成功: MODのアップロードに成功しました
+"{0} 成功上传至WorkShop服务器\\n是否跳转至创意工坊页面进行编辑详细介绍和图标?": "{0} WorkShop サーバーにアップロードされました\\n詳細とアイコンを編集するために
+  Workshop ページに移動しますか?"
+MOD上传失败 {0}: Mod のアップロードに失敗しました {0}
 "{0} 成功上传至WorkShop服务器\\n是否跳转至创意工坊页面进行编辑新内容?": "{0} Success uploaded to the WorkShop
   server\\nDo you want to jump to the Workshop page for editing new content?"
 MOD更新成功: MODの更新に成功
@@ -54,19 +75,29 @@ MOD更新成功: MODの更新に成功
   of the system (including external systems)\nIf you are not sure, please use Antivirus
   software to check
 启用 {0} 的代码插件?: "{0} のコード プラグインを有効にしますか?"
+重启游戏: ゲームを再起動
+是否退出游戏<虚拟桌宠模拟器>?\n请注意保存游戏: "<VPet-Simulator> を終了しますか?\\nゲームの保存に注意してください"
+权限不足: 権限が不十分です
+创建快捷方式失败,权限不足\n请以管理员身份运行后重试: ショートカットの作成に失敗しました。権限が不十分です\n管理者として実行して、もう一度お試しください
 桌宠重置失败: デスクトップペットのリセットに失敗しました
+是否加载该备份存档? 当前游戏数据会丢失: バックアップセーブをロードしますか? 現在のゲームデータは失われます!!
 您不是Steam用户，无法使用反馈中心\n欢迎加入虚拟主播模拟器群430081239反馈问题: You are not a Steam user and cannot
   use the Feedback Hub\nWelcome to check https://github.com/LorisYounger/VPet for
   feedback
+非Steam用户无法使用反馈中心: Steam 以外のユーザーはフィードバック Hub を使用できません
 问题详细描述是反馈具体问题\n例如如何触发这个报错,游戏有什么地方不合理等: Detailed description of the problem is feedback
   on the specific problem\nLike how to get this errors, What is unreasonable about
   the game.
+请填写问题描述: 問題の説明を入力してください
+感谢您的反馈和提交: フィードバックを送信していただきありがとうございます
 您的反馈已提交成功,感谢您的反馈与提交\nVOS将会尽快处理您的反馈并做的更好: Feedback success submitted. Thank you for
   your feedback and submit\nVOS will process your feedback as soon as possible and
   do better
+您今天的反馈次数已达上限: 今日のフィードバックの最大数に達しました
 您今天的反馈次数已达上限,请明天再来反馈.\n或欢迎加入虚拟主播模拟器群430081239反馈问题: You've reached your maximum number
   of feedback today, please come back tomorrow for feedback.\nOr go the https://github.com/LorisYounger/VPet
   for feedback problem
+反馈提交失败,遇到错误: フィードバックの送信がエラーで失敗しました
 '反馈上传失败\n欢迎加入虚拟主播模拟器群430081239手动反馈问题\n服务器消息:': 'Feedback submit failed\nWelcome to
   the https://github.com/LorisYounger/VPet for feedback\nServer Message:'
 ? 反馈上传失败,可能是网络或其他问题导致无法上传\n欢迎加入虚拟主播模拟器群430081239手动反馈问题\n
