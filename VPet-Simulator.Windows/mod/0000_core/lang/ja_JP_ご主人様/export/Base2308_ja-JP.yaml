@@ -3,7 +3,7 @@
 当前存档Hash验证信息: '現在のセーブハッシュの検証:'
 操作: 操作
 虚拟桌宠模拟器 规格: VPetシミュレーターの仕様
-吉娜: ジーナ
+吉娜: Gina
 通过: 合格
 失败: 失敗
 自定义聊天接口: カスタムチャットインターフェース
@@ -26,10 +26,6 @@
 当实时播放音量达到该值时运行音乐动作: ライブ音量がこの値に達すると、音楽アクションを実行します。
 当实时播放音量达到该值时运行特殊音乐动作: リアルタイム再生音量がこの値に達したときに特別な音楽アクションを実行します
 高潮音量: クライマックスとする音量
-Happyly: Happily
-Nomally: Nomally
-PoorConditionly: Sadly
-Illly: Sickly
 plugin: プラグイン
 ? MOD加载错误,是MOD({0})导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
 : 'MOD loading error, caused by MOD({0})\nIf possible, Please send a screenshot of
