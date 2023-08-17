@@ -6,6 +6,10 @@
 
 获取虚拟桌宠模拟器 [OnSteam(免费)](https://store.steampowered.com/app/1920960/VPet) 或 通过[Nuget](https://www.nuget.org/packages/VPet-Simulator.Core)内置到你的WPF应用程序
 
+## 本流との違い
+
+- 言語に `ja_JP_ご主人様` が追加されています
+
 ## 虚拟桌宠模拟器 详细介绍
 
 虚拟桌宠模拟器是一款桌宠软件,支持各种互动投喂等. 开源免费并且支持创意工坊.
