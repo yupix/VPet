@@ -87,7 +87,7 @@ Y轴: Y軸
 当玩家在指定时间未对桌宠进行交互的时候,智能禁用移动功能\r将在下次交互时解除: When the player does not interact with the
   desktop pet at a specified time, the move function is intelligently disabled\rreleased
   in the next interaction
-当关闭数据计算时\r桌宠显示的状态: status displayed when\rdata calculation turn off
+当关闭数据计算时\r桌宠显示的状态: データ計算がオフの場合に\r表示するペットの状態
 启用桌宠移动: 有効
 启用移动互动,桌宠会在屏幕上乱动,移动互动概率为普通互动的一半.\r如果嫌麻烦可以关掉: Enable mobile interaction, desktop pet
   will move around on the screen, probability of mobile interaction is half that of
@@ -185,7 +185,7 @@ UI&程序: UI & プログラム
 版本: Version
 激活: アクティベーション
 制作组名单: 開発チーム一覧
-杨远洛里斯: 若いロリス
+杨远洛里斯: YoungerLoris
 广大MOD作者: MOD制作者
 洛里斯杨远: LorisYounger
 Git贡献名单: Github コントリビューター
