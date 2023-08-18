@@ -31,5 +31,12 @@ Nomally: 通常
 PoorConditionly: 悲しみ
 Illly: 病気
 plugin: プラグイン
+? MOD加载错误,是MOD({0})导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
+: 'MOD loading error/com caused by MOD({0})\nIf possible/com Please send a screenshot
+  of the error message and the action you took before triggering the error to developer:
+  service@exlb.net\nThanks for your support of the game development\n'
+游戏发生错误,可能是: ゲームでエラーが発生した可能性があります。
 游戏致命性错误: ゲームの致命的なエラー
 游戏或者MOD: ゲームまたは MOD
+清理指令已下达,下次启动桌宠时生效: cleanup コマンドが発行されました。次回テーブル ペットが開始される時に有効になります。
+服务器超载,请稍后重试: サーバーの過負荷状態です。/r後でもう一度お試しください。
