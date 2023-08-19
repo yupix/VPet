@@ -1,17 +1,17 @@
 当前Token使用#現在のトークンの使用状況:|
-ServerFull#API call failed. Please resend the content later. The current server has exceeded the usage limit of {0}/!{1} words per hour. Please wait for 1 hour and try again:|
+ServerFull#API call failed. Please resend the content later. The current server has exceeded the usage limit of {0}/!!!{1} words per hour. Please wait for 1 hour and try again:|
 NoUser#Please initialize the desktop pet chat program first:|
-EmptyContent#The chat content is empty (note: generally/com this error feedback will not be triggered):|
+EmptyContent#The chat content is empty (note: generally/!!com this error feedback will not be triggered):|
 SensitiveGive#Detected prohibited words: chat generation has been terminated:|
-NoTokenVIP#Pay-as-you-go Token count has been used up\nToday word count has been used up  \nCurrent word count used: {0}/!{1}  \nWord count refresh remaining time: {2} hours:|
-NoTokenUser#Today's word count has been used up  \nCurrent word count used: {0}/!{1}  \nWord refresh remaining time: {2} hours:|
-EmptyResponse#The server returned empty \nAPI call failed. Please resend the content later. If multiple returns are empty/com please wait for 1 hour and try again:|
+NoTokenVIP#Pay-as-you-go Token count has been used up\nToday word count has been used up  \nCurrent word count used: {0}/!!!{1}  \nWord count refresh remaining time: {2} hours:|
+NoTokenUser#Today's word count has been used up  \nCurrent word count used: {0}/!!!{1}  \nWord refresh remaining time: {2} hours:|
+EmptyResponse#The server returned empty \nAPI call failed. Please resend the content later. If multiple returns are empty/!!com please wait for 1 hour and try again:|
 SensitiveReturn#禁止ワードを検出しました: チャットの応答を終了します:|
-DIYSensitive#Custom start contains prohibited words/com vpet initialization failed:|
+DIYSensitive#Custom start contains prohibited words/!!com vpet initialization failed:|
 NameEmpty#Table pet name cannot be empty:|
-Outdated#Outdated API/com please update the desktop pet version:|
+Outdated#Outdated API/!!com please update the desktop pet version:|
 Offline#APIは一時的にメンテナンス中です:|
-Steam Not purchased#Steam has not been purchased/com please obtain one for free on Steam to activate CGPT usage:|
+Steam Not purchased#Steam has not been purchased/!!com please obtain one for free on Steam to activate CGPT usage:|
 IP times Max#現在の IP アドレスは一時的に禁止されています。1 日待ってからもう一度お試しください。:|
 服务器消耗倍率#Server consumption rate:|
 当前使用字数#現在使用されているトークン:|
