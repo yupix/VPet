@@ -62,7 +62,7 @@ Y轴: Y軸
 使用ChatGPT进行聊天等相关设置: チャットおよびその他の関連設定には ChatGPT を使用します
 使用模式: 使用する方式
 相关功能: 関連機能
-使用从ChatGPT\r申请的的API: Use API requested\rfrom ChatGPT
+使用从ChatGPT\r申请的的API: ChatGPT からリクエストされた API を使用します。
 需要去OpenAI官网申请: OpenAI公式ページにアクセスする必要があります
 使用桌宠开发者\r提供的免费API: VPET開発者が\r提供する無料API
 需遵循相关协议法律法规并有聊天字数限制: 適用される契約、法律、規制が適用され、チャットの文字数制限が適用されます
@@ -135,14 +135,14 @@ MOD管理: MODの管理
 游戏版本: : 'ゲームバージョン:'
 MOD介绍: MODの説明
 内容: 内容
-所在文件夹: Located Folder
+所在文件夹: MODフォルダーを開く
 启用该模组: 有効
 停用该模组: 無効
 更新至Steam: Update to Steam
 创意工坊页面: Workshopページ
 MOD设置: MOD設定
 启用代码插件: プラグインを有効化する
-启用该模组的代码内容,不能保证系统安全性: 启用该模组的代码内容,不能保证系统安全性
+启用该模组的代码内容,不能保证系统安全性: このMODのコンテンツを有効にしても、システムのセキュリティは保証されません
 关于: About
 虚拟主播模拟器 规格: 虚拟主播模拟器 规格
 游戏策划: ゲームデザイナー
@@ -162,7 +162,7 @@ UI&程序: UI & プログラム
 洛里斯杨远: LorisYounger
 Git贡献名单: Github コントリビューター
 叶书天: Ye Shutian
-查看引用名单: 参考文献一覧
+查看引用名单: 使用ライブラリを表示
 访问Steam页面: Steamページ
 访问Github页面: Githubページ
 由于游戏暂未开发完毕,该名单并非完整名单.将在正式版完成前修改: ゲームはまだ開発段階の為、リストは完全ではありません。\r正式版が完成する前に改訂される予定です。
@@ -191,7 +191,7 @@ text: テキストセット
 正餐: ディナー
 零食: スナック菓子
 饮料: 飲み物
-功能性: Functionality
+功能性: 特徴的な食品
 药品: 医療品
 排序方式: ソートの基準
 按名字: 名前
@@ -231,9 +231,9 @@ text: テキストセット
 喝水: 水を飲む
 虚拟桌宠模拟器: VPet-Simulator
 点击此处开关鼠标穿透\n右键开关置于顶层\n长按挪动位置\n可在设置中关闭: Click here toggle mouse HitThrough\nRight-click toggle place in TopMost\nPress and hold to move position\nCan be turned off in the settings
-操作教程: 使い方に関するチュートリアル
+操作教程: 使い方
 重置状态: ステータスをリセットする
-桌宠重置成功: VPetのリセットが成功しました。
+桌宠重置成功: VPetのリセットに成功しました。
 打开 ChatGPT API 设置: ChatGPT API設定を開きます
 发送: 送信
 ChatGPT API 设置: ChatGPT API設定
@@ -243,7 +243,7 @@ ChatGPT API 设置: ChatGPT API設定
 累计花费: 累積コスト
 历史记录: 履歴
 完成设置: 完了
-API 链接 一般为 api.openai.com/v1/chat/completions: API Links are generally api.openai.com/v1/chat,pletions
+API 链接 一般为 api.openai.com/v1/chat,pletions: API Links are generally api.openai.com/v1/chat,pletions
 从 OpenAI 获得的 APIKEY 一般`sk-`开头: OpenAIから取得したAPIKEYは通常「sk-」で始まります。
 不会被忘记的初始化关键字, 字越多越贵: Initialization keywords that will not be forgotten, the more words, the more expensive
 0-2之间 0.2更稳定 0.8更随机: Between 0-2 0.2 is more stable 0.8 is more random
@@ -264,7 +264,7 @@ DLL引用名单: DLL リファレンス リスト
 显示逻辑: Display Logic
 双击运行显示效果: Double-click to run the display effect
 说话: 話す
-输入要说的话,按说话键发送: 言いたい言葉を入力し、話すキーを押して送信します
+输入要说的话,按说话键发送: '喋らせたい言葉を入力し、「話すボタン」を押して送信します '
 '选择说话类型:': 'Speakin:'
 在这里输入要说话的内容: ここに話したい内容を入力してください
 距离查看器: Distance Viewer
@@ -306,13 +306,13 @@ DLL引用名单: DLL リファレンス リスト
 购买: 買う
 经验值: EXP
 健康: 体力
-怕上火，喝广东咖啡！: Afraid excessive internal heat? drink Guangdong coffee!
+怕上火，喝广东咖啡！: 怒られるのが怖いので広東コーヒーを飲みましょう！
 收藏食物: 食料を集める
 物品详情: アイテム詳細
 椰汁: ココナツミルク
 白白胖胖，曲线圆润，要喝不加香油的椰O牌椰汁: 白くてぽっちゃり、丸みを帯びた曲線、Vita caca ココナッツ ジュースを飲むのがおすすめ
 果汁: フルーツジュース
-那个那个那个那个果汁分你一半: ジュースの半分をシェアします\n
+那个那个那个那个果汁分你一半: ジュースの半分をシェアします!
 可乐: コーラ
 蓝色那个在日用品区谢谢: The blue one is in the daily products. Thank you
 盐汽水: 塩ソーダ水
@@ -336,7 +336,7 @@ ab钙奶: ADカルシウムミルク
 等我硬起来有你好受的！: 私がタフになれば、あなたはいい気分になる！
 西冷牛排: サーロイン
 开瓶拉菲吧，上流: 上流階級を呼ぶラフィットのボトルを開ける
-煎西冷牛排: Fried Sirloin
+煎西冷牛排: サーロインステーキの唐揚げ
 开瓶可乐吧，上流: コーラのボトルを開け、上流階級を呼ぼう
 脑黑金: ブレイン・ロディータ
 过年过节不收礼！__________！(3分): 1.お祭りやお正月に贈るべきものは？
@@ -363,7 +363,7 @@ ab钙奶: ADカルシウムミルク
 盐焗鸡: 鶏肉の塩焼​​き
 谁说的腌鸡！站出来！: チキンのマリネなんて誰が言ったんだ！目立つ！
 番茄意面: トマトパスタ
-只要不是巧克力酱什么都好说。。: チョコレートソース以外なら何でも。 。
+只要不是巧克力酱什么都好说。。: チョコレートソース以外なら何でも...
 梅菜扣肉: 豚肉の煮込み 保存野菜添え
 不会咬人的谢谢: 噛まないよ、ありがとう
 麻婆豆腐: 麻婆豆腐
@@ -378,7 +378,7 @@ ab钙奶: ADカルシウムミルク
 纸包鸡包纸包鸡包鸡包纸: Paper wrapped chicken wrapped paper wrapped chicken wrapped chicken wrapped paper
 南瓜吐司: かぼちゃトースト
 加了南瓜！是的！我加了南瓜！: かぼちゃを追加しました!はい、かぼちゃを追加しました!
-酿豆腐: Stuffed Tofu
+酿豆腐: 豆腐の詰め物
 你中有我，我中有你: There's me in you, there's you in me
 三明治: サンドイッチ
 两面包夹芝士: チーズ入りパンサンドイッチ 2 つ
@@ -398,7 +398,7 @@ ab钙奶: ADカルシウムミルク
 横扫自己，做回饥饿: ソッカーも満足！
 炸鸡腿: 鶏もも肉のから揚げ
 你每吃一个炸鸡腿，就有0.5只鸡受到伤害。保护鸡鸡，从一次吃两个炸鸡腿做起！: 鶏もも肉のから揚げを1本食べるごとに、0.5羽の鶏が傷つく。鶏もも肉のから揚げを一度に2本食べることで、鶏を守りましょう！
-黄牛: Scalper
+黄牛: 牛
 放心，喝他的饮料不是他出钱你出命: Rest assured, drinking his drink is not his money for your life
 猪肉脯: Pork Jerky
 你感觉在吃牛皮。。: まるで牛革を食べているような気分になります。
@@ -417,7 +417,7 @@ ab钙奶: ADカルシウムミルク
 核桃仁: クルミ肉
 这次不用自己带锤子了: 今回はハンマーを持参する必要はない
 瓜子: メロンの種
-嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱: Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak Creak
+嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱嘎吱: ｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼｷﾞｼ
 火腿肠: ソーセージ
 肉做的棒子: 肉でできた棒
 爆米花: ポップコーン
@@ -430,7 +430,7 @@ ab钙奶: ADカルシウムミルク
 开趴必备: パーティーの必需品
 雪饼: おせんべい
 小时候的一口吃不下: 子供の頃は一つも完食できなかった
-娃仔小馒头: Baby Mantou
+娃仔小馒头: たまごボーロ
 这是我们的宝贝~~: これは私たちの宝物です~~
 牛扎糖: ヌガー
 好甜，像你一样: とても優しい、あなたみたいに
@@ -460,4 +460,4 @@ come on baby~: さあ、ベイビー〜
 钱: $
 '{0:f1} 秒': '{0:f1} 秒'
 SettingWidth: 600
-虚拟桌宠模拟器 规格: VPet シミュレータの仕様
+虚拟桌宠模拟器 规格: VPet の仕様
