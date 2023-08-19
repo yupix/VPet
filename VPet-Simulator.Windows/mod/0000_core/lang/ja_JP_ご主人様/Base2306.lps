@@ -8,7 +8,7 @@
 你添加了虚拟主播模拟器和虚拟桌宠模拟器到愿望单了吗? 快去加吧#VUP-Simulator と VPet-Simulator をウィッシュリストに追加しましたか? 追加してください。:|
 这游戏开发这么慢,都怪画师太咕了#このゲームの開発がとても遅いのはすべてゲームアーティストのせいです:|
 长按脑袋拖动桌宠到你喜欢的任意位置#頭を持ったまま、デスクトップのペットを好きな位置までドラッグします:|
-欢迎加入 虚拟主播模拟器群 430081239#このオープンソース プロジェクトのアドレスは https:/!!!/!!!github.com/!!!LorisYounger/!!!VPet にあります:|
+欢迎加入 虚拟主播模拟器群 430081239#このオープンソース プロジェクトのアドレスは https://github.com/LorisYounger/VPet にあります:|
 关注 {0} 谢谢喵#{0} 購読ありがとう！:|
 尝试加载动画和生成缓存#アニメーションをロードしてキャッシュを生成してみる:|
 正在加载CGPT#CGPT のロード中:|
@@ -20,7 +20,7 @@
 鼠标将会穿过桌宠到下方内容,不打扰操作\r该选项#マウス操作を妨げることなく、デスクトップ上でVPetを透過して\r下のコンテンツを操作する事が出来ます。:|
 鼠标穿透#マウスのクリックを無効にする:|
 添加快速切换小标,切换顶层或穿透#クイックスイッチャーを追加し、TopMost または HitThrough を切り替えます:|
-添加小标,快速切换顶层或穿透#スイッチャーの追加、TopMost/!!!HitThrough の切り替え:|
+添加小标,快速切换顶层或穿透#スイッチャーの追加、TopMost/HitThrough の切り替え:|
 更高缩放#より高いズーム:|
 支持更大缩放倍率#より大きなズーム倍率をサポート:|
 解锁缩放限制#ズーム制限を解除する:|
@@ -38,9 +38,9 @@ Y轴#Y軸:|
 开机启动#自動スタート:|
 该游戏随着开机启动该程序\r如需卸载游戏\r请关闭该选项#PCを起動した際自動ででゲームが起動します\rゲームをアンインストールしたい場合は\rこのオプションを無効にしてください:|
 从Steam启动#Steamから起動:|
-从Steam启动该游戏, 统计时长不能停#start the game from Steam/!!!com counting time cannot be stopped:|
+从Steam启动该游戏, 统计时长不能停#start the game from Steam, counting time cannot be stopped:|
 宠物动画#ペットアニメーション:|
-动画描述动画描述动画描述动画描述动画描述#アニメーションの説明/!!nアニメーションの説明/!!nアニメーションの説明/!!nアニメーションの説明/!!nアニメーションの説明:|
+动画描述动画描述动画描述动画描述动画描述#アニメーションの説明\nアニメーションの説明\nアニメーションの説明\nアニメーションの説明\nアニメーションの説明:|
 加载的宠物动画,重启后生效#ロードされたペットアニメーション、再起動後に有効になります:|
 重启软件以应用更改#ソフトウェアを再起動して変更を適用します:|
 系统#システム:|
@@ -72,7 +72,7 @@ Y轴#Y軸:|
 游戏互动相关设置#ゲームでの交流に関係する設定:|
 启用后桌宠会有状态变化,需要按时投喂等#ペットの状態が変化する・餌が必要:|
 启用数据计算,桌宠会有状态变化,需要按时投喂等.\r如果嫌麻烦可以关掉#データ計算を有効にすると、デスクトップペットのステータスが変化し、\r時間通りに餌を与える必要があるなど、面倒な場合はオフにすることができます。:|
-当玩家在指定时间未对桌宠进行交互的时候,智能禁用移动功能\r将在下次交互时解除#When the player does not interact with the desktop pet at a specified time/!!com the move function is intelligently disabled\rreleased in the next interaction:|
+当玩家在指定时间未对桌宠进行交互的时候,智能禁用移动功能\r将在下次交互时解除#When the player does not interact with the desktop pet at a specified time, the move function is intelligently disabled\rreleased in the next interaction:|
 当关闭数据计算时\r桌宠显示的状态#データ計算がオフの場合に\r表示するペットの状態:|
 启用桌宠移动#有効:|
 启用移动互动,桌宠会在屏幕上乱动,移动互动概率为普通互动的一半.\r如果嫌麻烦可以关掉#インタラクション（アクション）を有効にします。\rデスクトップ上でペットが動き回ります。インタラクションの確率は通常のインタラクションの半分です。\r 必要ない場合は無効にする事が出来ます。:|
@@ -92,22 +92,22 @@ Y轴#Y軸:|
 显示状态#ステータス表示:|
 桌宠移动#ペットの移動:|
 计算间隔#計算の間隔:|
-数据计算和互动计算时间间隔,间隔越短需要互动的频率可能会增加.\r间隔越大越不容易打扰到当前工作#データ計算とインタラクション（アクション）計算の間の時間、間隔/!!!r間隔が短いほど、インタラクションの頻度が増加する可能性があります。/!!!r間隔が長いほど、現在の作業に支障をきたす可能性は低くなります。:|
+数据计算和互动计算时间间隔,间隔越短需要互动的频率可能会增加.\r间隔越大越不容易打扰到当前工作#データ計算とインタラクション（アクション）計算の間の時間、間隔\r間隔が短いほど、インタラクションの頻度が増加する可能性があります。\r間隔が長いほど、現在の作業に支障をきたす可能性は低くなります。:|
 互动周期#インタラクションサイクル:|
 每分钟计算#1分ごとに計算:|
 次数值变化# per minute:|
 大约#Proactively engage in interaction :|
 分钟左右主动进行一次互动(走路发呆爬墙等)# per minute:|
-互动周期决定在交互结束后大约经历多少计算间隔后再次进行自主行动#インタラクション（アクション）サイクルは、インタラクションが終了してから/!!!r経過した計算間隔の数を決定し、自動で動作します。:|
+互动周期决定在交互结束后大约经历多少计算间隔后再次进行自主行动#インタラクション（アクション）サイクルは、インタラクションが終了してから\r経過した計算間隔の数を決定し、自動で動作します。:|
 操作设置#操作設定:|
 游戏操作相关设置#ゲーム操作関連の設定:|
 长按间隔#長押し間隔:|
 桌宠名字#デスクトップペットの名前:|
-数据计算和互动计算时间间隔,间隔越短需要互动的频率可能会增加\r间隔越大越不容易打扰到当前工作#データ計算とインタラクション（アクション）計算の間の時間、間隔/!!!r間隔が短いほど、インタラクションの頻度が増加する可能性があります。/!!!r間隔が長いほど、現在の作業に支障をきたす可能性は低くなります。:|
+数据计算和互动计算时间间隔,间隔越短需要互动的频率可能会增加\r间隔越大越不容易打扰到当前工作#データ計算とインタラクション（アクション）計算の間の時間、間隔\r間隔が短いほど、インタラクションの頻度が増加する可能性があります。\r間隔が長いほど、現在の作業に支障をきたす可能性は低くなります。:|
 {0:F2} 秒#{0:F2} 秒:|
 自定#DIY:|
 自定义链接#カスタムリンク:|
-在自定栏添加快捷方式/网页/快捷键, 可以便携启动想要的功能#Add shortcuts/!!!web pages/!!!shortcuts in the customization bar to easily launch the desired functions:|
+在自定栏添加快捷方式/网页/快捷键, 可以便携启动想要的功能#Add shortcuts/web pages/shortcuts in the customization bar to easily launch the desired functions:|
 键盘快捷键编写方法请参考#キーボードショートカットを変更する方法はこちら:|
 键盘快捷键 通用注解#キーボード ショートカットの共通注意事項:|
 右键进行排序/删除等操作#右クリックで並べ替え・削除などを行えます:|
@@ -243,9 +243,9 @@ ChatGPT API 设置#ChatGPT API設定:|
 累计花费#累積コスト:|
 历史记录#履歴:|
 完成设置#完了:|
-API 链接 一般为 api.openai.com/v1/chat/completions#API Links are generally api.openai.com/!!!v1/!!!chat/!!completions:|
+API 链接 一般为 api.openai.com/v1/chat,pletions#API Links are generally api.openai.com/v1/chat,pletions:|
 从 OpenAI 获得的 APIKEY 一般`sk-`开头#OpenAIから取得したAPIKEYは通常「sk-」で始まります。:|
-不会被忘记的初始化关键字, 字越多越贵#Initialization keywords that will not be forgotten/!!com the more words/!!com the more expensive:|
+不会被忘记的初始化关键字, 字越多越贵#Initialization keywords that will not be forgotten, the more words, the more expensive:|
 0-2之间 0.2更稳定 0.8更随机#Between 0-2 0.2 is more stable 0.8 is more random:|
 读取最大花费Token数量 1千Token=$0.02#The maximum number of tokens to generate in the chat completion. 1000 Token=$0.02:|
 聊天历史记录#チャット履歴:|
@@ -260,7 +260,7 @@ DLL引用名单#DLL リファレンス リスト:|
 双击查看动画效果#ダブルクリックするとアニメーションが表示されます:|
 选择状态模式:#状態::|
 动画播放#アニメーションの再生:|
-双击添加/移除播放列表内容#Double-click Add/!!!Remove Playlist Content:|
+双击添加/移除播放列表内容#Double-click Add/Remove Playlist Content:|
 显示逻辑#Display Logic:|
 双击运行显示效果#Double-click to run the display effect:|
 说话#話す:|
@@ -292,13 +292,13 @@ DLL引用名单#DLL リファレンス リスト:|
 上传游戏存档#ゲームをアップロードして保存しました:|
 联系:#Contact::|
 提供联系方式以获得反馈,可不填#フィードバックのための連絡先情報を提供するかどうか:|
-提供联系方式以获得反馈,可不填\reg:QQ430081239#Provide contact information for feedback/!!com or not\reg:service@exlb.net:|
+提供联系方式以获得反馈,可不填\reg:QQ430081239#Provide contact information for feedback, or not\reg:service@exlb.net:|
 提交#送信:|
 玩家取消上传存档#Player cancels uploading saved:|
 秒#秒:|
 停止#やめる:|
 当前已#現在:|
-您的桌宠等级不足{0}/{2}\n无法进行{1}#あなたのペットは {1} に必要なレベルを満たしていません。{0}/!!!{2}:|
+您的桌宠等级不足{0}/{2}\n无法进行{1}#あなたのペットは {1} に必要なレベルを満たしていません。{0}/{2}:|
 {0}取消#{0} キャンセル:|
 搜索商品#商品を検索:|
 购买后不自动关闭窗口#購入後も画面を閉じない:|
@@ -353,7 +353,7 @@ ab钙奶#ADカルシウムミルク:|
 红烧狮子头#ミートボール醤油添え:|
 芋头西米露#里芋の甘いスープ:|
 沙拉#サラダ:|
-沙拉沙拉啦啦啦#サラダサラダラララ/!!n:|
+沙拉沙拉啦啦啦#サラダサラダラララ\n:|
 东坡肘子#東坡豚の指:|
 小知识：东坡肘子其实并非苏东坡之功，而是其妻子王弗的妙作#豆知識: 『東坡豚の指』は実際には蘇東坡の作品ではなく、彼の妻である王福が宣伝したものです。:|
 罗宋汤#ボルシチ:|
@@ -379,7 +379,7 @@ ab钙奶#ADカルシウムミルク:|
 南瓜吐司#かぼちゃトースト:|
 加了南瓜！是的！我加了南瓜！#かぼちゃを追加しました!はい、かぼちゃを追加しました!:|
 酿豆腐#豆腐の詰め物:|
-你中有我，我中有你#There's me in you/!!com there's you in me:|
+你中有我，我中有你#There's me in you, there's you in me:|
 三明治#サンドイッチ:|
 两面包夹芝士#チーズ入りパンサンドイッチ 2 つ:|
 鸡翅#手羽先:|
@@ -387,7 +387,7 @@ ab钙奶#ADカルシウムミルク:|
 面包#パン:|
 你还记得你吃过多少块面包吗#おまえは今まで食ったパンの枚数をおぼえているのか?:|
 汉堡#ハンバーガー:|
-还想要汉O王？这价格不是华O士已经对你很好了。#This burger looks seriously different from the real thing/!!com and is obviously bigger than the promotional image. It is said that this burger will increase in size by 4% every year/!!com and in terms of time/!!com it may expand to the day when the universe is destroyed.:|
+还想要汉O王？这价格不是华O士已经对你很好了。#This burger looks seriously different from the real thing, and is obviously bigger than the promotional image. It is said that this burger will increase in size by 4% every year, and in terms of time, it may expand to the day when the universe is destroyed.:|
 臭豆腐#臭豆腐:|
 闻起来臭，吃起来也臭，就是越吃越香。#臭い、食べると臭い、でもどんどん味が香ばしくなる。:|
 压缩饼干#圧縮ビスケット:|
@@ -399,7 +399,7 @@ ab钙奶#ADカルシウムミルク:|
 炸鸡腿#鶏もも肉のから揚げ:|
 你每吃一个炸鸡腿，就有0.5只鸡受到伤害。保护鸡鸡，从一次吃两个炸鸡腿做起！#鶏もも肉のから揚げを1本食べるごとに、0.5羽の鶏が傷つく。鶏もも肉のから揚げを一度に2本食べることで、鶏を守りましょう！:|
 黄牛#牛:|
-放心，喝他的饮料不是他出钱你出命#Rest assured/!!com drinking his drink is not his money for your life:|
+放心，喝他的饮料不是他出钱你出命#Rest assured, drinking his drink is not his money for your life:|
 猪肉脯#Pork Jerky:|
 你感觉在吃牛皮。。#まるで牛革を食べているような気分になります。:|
 能量饮料#エナジードリンク:|
@@ -407,7 +407,7 @@ ab钙奶#ADカルシウムミルク:|
 维生素C含片#ビタミンC トローチ:|
 本产品为保健品不能代替药品#この商品は健康製品であり、医療品の代替品ではありません:|
 大鹏特饮#Dapeng Special Drink:|
-困了累了，大鹏特饮#Sleepy and tired/!!com Dapeng drinks specially:|
+困了累了，大鹏特饮#Sleepy and tired, Dapeng drinks specially:|
 巧克力#チョコレート:|
 纵享丝滑#シルクのような滑らかさ:|
 冰激凌#アイスクリーム:|
@@ -449,7 +449,7 @@ come on baby~#さあ、ベイビー〜:|
 奶片#ミルクタブレット:|
 希望你们永远不会知道这个药。。。#あなたがこの薬のことを決して知らないことを祈ります...:|
 牛板筋#牛すじ:|
-只要来一根，大家都是好兄弟#Just for one skewer/!!com all we are broski:|
+只要来一根，大家都是好兄弟#Just for one skewer, all we are broski:|
 戒指糖#シュガーリング:|
 这不比那个不能吃的破石头有用多了#食べられない石より役に立つよ:|
 太阳系#太陽系:|
