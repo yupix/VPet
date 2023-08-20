@@ -1,4 +1,3 @@
----
 体力-{0:f0} 心情+{1:f0}: 体力-{0:f0} 心情+{1:f0}
 您的桌宠 {0} 生病啦,没法进行{1}: あなたのデスクトップ ペット {0} は病気のため、{1} できません
 "{2}完成啦, 累计赚了 {0:f2} 金钱\\n共计花费了{1}分钟": "{2}is finish, accumulated realized {0:f2}
@@ -18,16 +17,15 @@
 你好: こんにちは
 欢迎使用虚拟桌宠模拟器!\n如果遇到桌宠爬不见了,可以在我这里设置居中或退出桌宠: Welcome to use VPet-Simulator!\nIf you can't
   found desktop pet, you can set the center or exit the desktop pet in here.
-? 欢迎使用虚拟桌宠模拟器\n这是个中期的测试版,若有bug请多多包涵\n欢迎加群虚拟主播模拟器430081239或在菜单栏-管理-反馈中提交bug或建议
-: Welcome to use VPet-Simulator\nThis is a beta version, If there are any bugs,
-  please forgive me a lot\nWelcome to check https://github.com/LorisYounger/VPet,
-  or at Menu - System - Feedback Hub for feedback
+欢迎使用虚拟桌宠模拟器\n这是个中期的测试版,若有bug请多多包涵\n欢迎加群虚拟主播模拟器430081239或在菜单栏-管理-反馈中提交bug或建议: Welcome
+  to use VPet-Simulator\nThis is a beta version, If there are any bugs, please forgive
+  me a lot\nWelcome to check https://github.com/LorisYounger/VPet, or at Menu - System
+  - Feedback Hub for feedback
 "{0} 未加载代码插件": プラグイン {0} がロードされていません
-模组 {0} 的代码插件损坏\n虚拟桌宠模拟器未能成功加载该插件\n请联系作者修复该问题: Mod {0} Code plugins broken\nVPet-Simulator
-  failed to load the plugin\nPlease contact author to fix this problem
-? 由于 {0} 包含代码插件\n虚拟桌宠模拟器已自动停止加载该插件\n请手动前往设置允许启用该mod 代码插件
-: Since {0} contains code plugin\nVPet-Simulator auto stopped loading the plugin\nplease
-  go to the settings to enabled the mod code plugin
+模组 {0} 的代码插件损坏\n虚拟桌宠模拟器未能成功加载该插件\n请联系作者修复该问题: Mod {0} のコードが破損しています\nVPetがModをロードできませんでした。\nこの問題を解決するには作者に連絡してください
+由于 {0} 包含代码插件\n虚拟桌宠模拟器已自动停止加载该插件\n请手动前往设置允许启用该mod 代码插件: Since {0} contains code plugin\nVPet-Simulator
+  auto stopped loading the plugin\nplease go to the settings to enabled the mod code
+  plugin
 该模组已停用: このMODは無効になっています
 "[认证]": "[認証済み]"
 "[签名]": "[Signed]"
@@ -41,11 +39,11 @@
 请检查API token设置: APIトークンの設定を確認してください
 API调用失败: API呼び出しに失敗しました
 金钱不足: 資金不足
-? 请使用口语化的、可爱的、女性化的、调皮的语言风格和我交流. 你是一只桌宠, 你的名字叫{Name}, 你喜欢玩 虚拟主播模拟器. 你需要尝试体会我与你对话中的感情、产生自己的情感并尽可能给出可爱的回答
-: Please use colloquial, cute, feminine, mischievous language style to
-  communicate with me. You are a desktop pet, You name is {Name}, You like
-  play the VPet-Simulator. You need to try to feel the feelings in my conversation
-  with you, generate your own emotions, and give as cute answers as possible
+请使用口语化的、可爱的、女性化的、调皮的语言风格和我交流. 你是一只桌宠, 你的名字叫{Name}, 你喜欢玩 虚拟主播模拟器. 你需要尝试体会我与你对话中的感情、产生自己的情感并尽可能给出可爱的回答: Please
+  use colloquial, cute, feminine, mischievous language style to communicate with me.
+  You are a desktop pet, You name is {Name}, You like play the VPet-Simulator. You
+  need to try to feel the feelings in my conversation with you, generate your own
+  emotions, and give as cute answers as possible
 未找到对应类型图像资源: No sprite resources of the corresponding type were found
 当前正在播放: 現在プレイ中
 当前正在运行: 現在実行中
@@ -63,17 +61,17 @@ MOD上传失败: MODのアップロードに失敗しました
   コンテンツを公開する必要がある場合は、コピーして名前を変更してください
 封面图片(icon.png)大于500kb,请修改后重试: ロゴ (icon.png) は 500KB を超えています。変更して再試行してください。
 MOD上传成功: MODのアップロードに成功しました
-"{0} 成功上传至WorkShop服务器\\n是否跳转至创意工坊页面进行编辑详细介绍和图标?": "{0} WorkShop サーバーにアップロードされました\\n詳細とアイコンを編集するために
-  Workshop ページに移動しますか?"
+"{0} 成功上传至WorkShop服务器\\n是否跳转至创意工坊页面进行编辑详细介绍和图标?": "{0} WorkShop サーバーにアップロードされました\\
+  n詳細とアイコンを編集するために Workshop ページに移動しますか?"
 MOD上传失败 {0}: Mod のアップロードに失敗しました {0}
 "{0} 成功上传至WorkShop服务器\\n是否跳转至创意工坊页面进行编辑新内容?": "{0} Success uploaded to the WorkShop
   server\\nDo you want to jump to the Workshop page for editing new content?"
 MOD更新成功: MODの更新に成功
 任务完成: ミッション達成
-? 是否启用 {0} 的代码插件?\n一经启用,该插件将会允许访问该系统(包括外部系统)的所有数据\n如果您不确定,请先使用杀毒软件查杀检查
-: enable code plugin for {0}? \nOnce enabled, plug-in will allow access to all
-  data of the system (including external systems)\nIf you are not sure, please
-  use Antivirus software to check
+是否启用 {0} 的代码插件?\n一经启用,该插件将会允许访问该系统(包括外部系统)的所有数据\n如果您不确定,请先使用杀毒软件查杀检查: enable code
+  plugin for {0}? \nOnce enabled, plug-in will allow access to all data of the system
+  (including external systems)\nIf you are not sure, please use Antivirus software
+  to check
 启用 {0} 的代码插件?: "{0} のコード プラグインを有効にしますか?"
 重启游戏: ゲームを再起動
 是否退出游戏<虚拟桌宠模拟器>?\n请注意保存游戏: "<VPet-Simulator> を終了しますか?\\nゲームの保存に注意してください"
@@ -82,8 +80,8 @@ MOD更新成功: MODの更新に成功
 桌宠重置失败: デスクトップペットのリセットに失敗しました
 是否加载该备份存档? 当前游戏数据会丢失: バックアップセーブをロードしますか? 現在のゲームデータは失われます!!
 您不是Steam用户，无法使用反馈中心\n欢迎加入虚拟主播模拟器群430081239反馈问题: You are not a Steam user and cannot
-  use the Feedback Hub\nWelcome to check https://github.com/LorisYounger/VPet
-  for feedback
+  use the Feedback Hub\nWelcome to check https://github.com/LorisYounger/VPet for
+  feedback
 非Steam用户无法使用反馈中心: Steam 以外のユーザーはフィードバック Hub を使用できません
 问题详细描述是反馈具体问题\n例如如何触发这个报错,游戏有什么地方不合理等: Detailed description of the problem is feedback
   on the specific problem\nLike how to get this errors, What is unreasonable about
@@ -100,13 +98,13 @@ MOD更新成功: MODの更新に成功
 反馈提交失败,遇到错误: フィードバックの送信がエラーで失敗しました
 '反馈上传失败\n欢迎加入虚拟主播模拟器群430081239手动反馈问题\n服务器消息:': 'Feedback submit failed\nWelcome to
   the https://github.com/LorisYounger/VPet for feedback\nServer Message:'
-? 反馈上传失败,可能是网络或其他问题导致无法上传\n欢迎加入虚拟主播模拟器群430081239手动反馈问题\n
-: Feedback submit failed, may be a network or other issue preventing the upload\nWelcome
-  to the https://github.com/LorisYounger/VPet for feedback\n
+反馈上传失败,可能是网络或其他问题导致无法上传\n欢迎加入虚拟主播模拟器群430081239手动反馈问题\n: Feedback submit failed, may
+  be a network or other issue preventing the upload\nWelcome to the https://github.com/LorisYounger/VPet
+  for feedback\n
 存档名称:{0}\n存档等级:{1}\n存档金钱:{2}\n是否加载该备份存档? 当前游戏数据会丢失: Save name:{0}\nSave level:{1}\nSave
   money:{2}\nLoad the backup save? Current game data will be lost
-? "{0} 上传至WorkShop服务器失败\\n请检查网络后重试\\n请注意:上传和下载工坊物品可能需要良好的网络条件\\n失败原因:{1}"
-: "{0} Upload to WorkShop server failed\\nPlease check the network and try again\\nPlease
-  note: Uploading and downloading workshop items may require good internet conditions\\nReason
-  for failure: {1}"
+"{0} 上传至WorkShop服务器失败\\n请检查网络后重试\\n请注意:上传和下载工坊物品可能需要良好的网络条件\\n失败原因:{1}": "{0} Upload
+  to WorkShop server failed\\nPlease check the network and try again\\nPlease note:
+  Uploading and downloading workshop items may require good internet conditions\\
+  nReason for failure: {1}"
 体力-{0:f0} 気分+{1:f0}: 体力-{0:f0} 気分+{1:f0}
