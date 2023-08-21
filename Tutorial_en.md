@@ -1,136 +1,134 @@
 # VPet-Simulator Tutorial
 
-**This tutorial only opens auto the first time you start/act on an update** 
-*If you can see this file open auto every time you start Desktop pet, that is a bug, please feedback to me*
+**This tutorial only automatically opens the first time you start the program and when you start it after an update** 
+*If you can see this file automatically open every time you start Desktop pet, that is a bug. Please report it to me*
 
-Desktop pet on by default[Data Calculation](#Data Calculation), After turning on the data calculation, the consumption of desktop pet mood/food will be calculated, and the player needs to interact. You can set the switch and set the pace of play in the settings
+[Data Calculation](#Data Calculation), which affects the attribute changes for the Virtual Pet, is on by default, but can be toggled under System > Interact. Data Collection toggles whether or not consumption of the Virutal Pet's attributes, such as stamina, mood, hunger, and thirst, is on. 
 
-The core of this game is desktop pets, more auto action such as walking around, daze, crouching and so on need to stay online to see.
+The core gameplay is the progression of the Virtual Pet, while automatic actions such as walking around, dazing, crouching, and so on needs the player to be present to witness them.
 
-## How 2 play
+## How 2 Play
 
-### Right click to open the menu bar
+### Right Click to Open/Close the Menu Bar
 
-Right-click again to close
+![tut1](Tutorial.assets/CN/tut1.gif)
 
-![tut1](Tutorial.assets/tut1.gif)
+### Long Press the Head/Body to Move
 
-### Long press the head/body to move
+The Long Press Interval can be set under Settings > Interact.
 
-The long press time can be set in the settings
+![tut5](Tutorial.assets/CN/tut5.gif)
 
-![tut5](Tutorial.assets/tut5.gif)
+### Click the Head to Pat the Head
 
-### Click the head to touch the head
+![tut2](Tutorial.assets/CN/tut2.gif)
 
-![tut2](Tutorial.assets/tut2.gif)
+### Click the Body to Speak
 
-### Click the body to speak
+![tut3](Tutorial.assets/CN/tut3.gif)
 
-![tut3](Tutorial.assets/tut3.gif)
+### Touch Head
 
-### Touch head
+![tut4](Tutorial.assets/CN/tut4.gif)
 
-![tut4](Tutorial.assets/tut4.gif)
+### Touch Body
 
-### Touch body
-
-![ss1](Tutorial.assets/ss1.gif)
+![ss1](Tutorial.assets/CN/ss1.gif)
 
 ## Interact
 
 ### Feeding
 
-Click to feed to eat and drink, immediately after eating/drinking, half of the fullness and thirst will be replenished, and the remaining half will slowly increase
+Clicking on Feed > Food/Drink/Medicine will take you to Betterbuy's respective category. Immediately after purchasing something, the Virtual Pet will consume the product, and half of the associated hunger and thirst values will be replenished instantly, while the other half will be added gradually.
 
-![ss16](Tutorial.assets/ss16.gif)
+![ss16](Tutorial.assets/CN/ss16.gif)
 
 ### Work
 
-Make money through interact **copywriting** or **Live**, after earning money, you can buy food and drinks or furniture for desktop pet (if there is a community system)
+Make Money through Interact > Work > **Copywriting** or **Live** (unlocked at level 10), which can be used to buy food, drinks, and medicine from BetterMart. There may be furniture for the Virtual Pet available in the future.
 
-![ss15](Tutorial.assets/ss15.gif)
+![ss15](Tutorial.assets/CN/ss15.gif)
 
 ### Learn
 
-Learn to gain EXP faster
+Learn increases EXP. Research is unlocked at level 15.
 
 ### Sleep
 
-Less stamina exertion and faster recovery of stamina, suitable for stay online
+Sleep lowers Stamina exertion and faster recovery of Stamina, which is better for AFKing.
 
 ## Data Calculation
 
-Settings-Interact can toggle data calculation and other related operations
+Settings > Interact can toggle data calculation and other related operations.
 
-![image-20230724101858667](Tutorial.assets/image-20230724101858667.png)
+![English Settings Screenshot](Tutorial.assets/EN/VPet_Settings.PNG)
 
 ### Data Calculation
 
-After opening, the desktop pet will have a series of needs, such as thirst and hunger. If you just want to observe, turn off data calculation.
+While the program is running, Virtual Pet will have a series of needs, such as Mood, Hunger, and Thirst. If you just want to just observe the Virtual Pet without worrying about these needs, turn off data calculation.
 
 ### Computing between
 
-Calculate desktop pet state interval. The longer the time, the longer the frequency of desktop pet interaction demand, and the slower the consumption value. And vice versa, you can adjust it to your favorite style
+Calculate Virtual Pet Data Calculation interval. The longer the interval, the longer the frequency of Virtual Pet interactions and the lower the rate of Consumption. Adjust this to your preference.
 
-* If you want to feed the water/eat desktop pet only occasionally, the longer the calculation interval, the better
-* If you want to desktop pet glow faster, the shorter the calculation interval, the better
+* If you only want to feed the Virtual Pet occasionally, a longer calculation interval is better.
+* If you want to Virtual Pet grow faster, a shorter calculation interval is better.
 
 ### Interaction Cycles
 
-Decide after how many cycles the desktop pet decides to act auto, such as walking around. The longer the cycles, the lower the frequency
+Decide after how many Data Calculation cycles the Virtual Pet decides to automatically move around. The longer the cycles, the lower the frequency of interactions.
 
-![ss18](Tutorial.assets/ss18.gif)
+![ss18](Tutorial.assets/CN/ss18.gif)
 
-### desktop pet moving
+### Virtual Pet moving
 
-Decide whether the desktop pet is allowed to perform displacement action, and the desktop pet will not move and stay put after closing
+Decide whether the Virtual Pet is allowed to perform displacement action, and the Virtual Pet will not move and stay put after closing.
 
 #### Smart Moving
 
-When turned on, the desktop pet will only move when the player interact, otherwise it will stay where it is
+When turned on, the Virtual Pet will only move with player interaction, otherwise it will stay where it is.
 
 ## Custom links
 
 Add shortcuts/webpages to the custom bar to start the desired function on the go
 For more information about how to write keyboard shortcuts, see [Keyboard shortcuts](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=windowsdesktop-7.0#remarks) Generic Annotations
 
-![image-20230620063315866](Tutorial.assets/image-20230620063315866.png)
+![image-20230620063315866](Tutorial.assets/CN/image-20230620063315866.png)
 
-After saving the settings, you can see the customized shortcut keys in the desktop pet menu bar
+After saving the settings, you can see the customized shortcut keys in the Virtual Pet menu bar.
 
-![image-20230620063216134](Tutorial.assets/image-20230620063216134.png)
+![image-20230620063216134](Tutorial.assets/CN/image-20230620063216134.png)
 
 ## Data Introduction
 
 ### Money
 
-It can be used to buy things to eat and drink in Betterbuy, which is very useful
+It can be used to buy things in Betterbuy, which affects the attributes of the Virtual Pet.
 
 ### EXP
 
-Level up the player, the higher the level, the higher the money/experience obtained by working and studying. It also increases the Likeablilty limit
+Affects the level of the Virtual Pet. Higher levels increases Money and Experience obtained by working and studying, as well as the Limit for Likeability.
 
 ### Stamina
 
-Interacting with the desktop pet (touching the head and body) consumes stamina and converts into mood
+Interacting with the Virtual Pet (touching the head and body) converts Stamina into Mood.
 
 ### Mood
 
-Maintaining good condition and increasing the speed of EXP acquisition, high mood will also increase Likeablilty.
+High mood will maintain Health and increase EXP Acquisition and Likeability.
 
 ### Hunger
 
-Over time consumption will get low, low Hungry mean desktop pet hungry. High Hunger restores Stamina and improves health
+Depleted over time. High Hunger (meaning Satiation) restores Stamina and improves Health.
 
 ### Thirst
 
-Over time consumption will get low, low Thirst mean desktop pet thirst. High Thirst restores Stamina and improves health
+Depleted over time. High Thirst restores Stamina and improves Health.
 
-### Health(hide)
+### Health(hidden)
 
-Low health will get sick, sick will not be able to work and study
+Low Health will lead to the Virtual Pet getting sick, which makes her unable to work or study.
 
-### Likeablilty(hide)
+### Likeablilty(hidden)
 
-High Likeablilty can make the body healthier, and will also trigger hidden events such as different speak content.
+High Likeablilty can make the Virtual Pet healthier, and will also trigger hidden events such as different speak content.
