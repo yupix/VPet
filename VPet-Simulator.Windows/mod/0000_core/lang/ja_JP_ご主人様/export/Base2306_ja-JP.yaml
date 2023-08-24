@@ -257,7 +257,6 @@ ChatGPT API 设置: ChatGPT API設定
 累计花费: 累積コスト
 历史记录: 履歴
 完成设置: 完了
-API 链接 一般为 api.openai.com/v1/chat/completions: API Links are generally api.openai.com/v1/chat,pletions
 从 OpenAI 获得的 APIKEY 一般`sk-`开头: OpenAIから取得したAPIKEYは通常「sk-」で始まります。
 不会被忘记的初始化关键字, 字越多越贵: Initialization keywords that will not be forgotten, the more
   words, the more expensive
