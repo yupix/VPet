@@ -34,11 +34,11 @@ namespace VPet_Simulator.Windows.Interface
         /// <summary>
         /// 版本号
         /// </summary>
-        int verison { get; }
+        int version { get; }
         /// <summary>
         /// 版本号
         /// </summary>
-        string Verison { get; }
+        string Version { get; }
         /// <summary>
         /// 上次点击时间 (Tick)
         /// </summary>
@@ -63,6 +63,10 @@ namespace VPet_Simulator.Windows.Interface
         /// 点击时会说的话
         /// </summary>
         List<ClickText> ClickTexts { get; }
+        /// <summary>
+        /// 选择说的话
+        /// </summary>
+        List<SelectText> SelectTexts { get; }
         /// <summary>
         /// 获得自动点击的文本
         /// </summary>
@@ -121,6 +125,8 @@ namespace VPet_Simulator.Windows.Interface
         /// 关闭指示器,默认为true
         /// </summary>
         bool CloseConfirm { get; }
+
+     
     }
 
 }
