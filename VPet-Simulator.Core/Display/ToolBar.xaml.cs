@@ -11,10 +11,10 @@ using LinePutScript;
 using LinePutScript.Localization.WPF;
 using static VPet_Simulator.Core.GraphInfo;
 using System.Collections.Generic;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 using static VPet_Simulator.Core.GraphHelper;
 using System.ComponentModel;
 using System.Reflection;
+using static VPet_Simulator.Core.Main;
 
 namespace VPet_Simulator.Core
 {
@@ -73,7 +73,7 @@ namespace VPet_Simulator.Core
                     case Work.WorkType.Play:
                         ps.Add(w);
                         break;
-                }              
+                }
             }
             if (ws.Count == 0)
             {
@@ -150,13 +150,19 @@ namespace VPet_Simulator.Core
         Work wwork;
         Work wstudy;
         Work wplay;
+        public Func<Work, bool> WorkCheck;
         public void StartWork(Work work)
         {
             if (!m.Core.Controller.EnableFunction || m.Core.Save.Mode != GameSave.ModeType.Ill)
                 if (!m.Core.Controller.EnableFunction || m.Core.Save.Level >= work.LevelLimit)
                     if (m.State == Main.WorkingState.Work && m.StateID == m.Core.Graph.GraphConfig.Works.IndexOf(work))
                         m.WorkTimer.Stop();
-                    else m.WorkTimer.Start(work);
+                    else
+                    {
+                        if (WorkCheck != null && !WorkCheck.Invoke(work))
+                            return;
+                        m.WorkTimer.Start(work);
+                    }
                 else
                     MessageBoxX.Show(LocalizeCore.Translate("您的桌宠等级不足{0}/{2}\n无法进行{1}", m.Core.Save.Level.ToString()
                         , work.NameTrans, work.LevelLimit), LocalizeCore.Translate("{0}取消", work.NameTrans));
@@ -424,7 +430,10 @@ namespace VPet_Simulator.Core
             this.Visibility = Visibility.Collapsed;
             if (m.Core.Save.Mode != GameSave.ModeType.Ill)
                 if (m.State == Main.WorkingState.Sleep)
+                {
+                    m.State = WorkingState.Nomal;
                     m.Display(GraphType.Sleep, AnimatType.C_End, m.DisplayNomal);
+                }
                 else if (m.State == Main.WorkingState.Nomal)
                     m.DisplaySleep(true);
                 else

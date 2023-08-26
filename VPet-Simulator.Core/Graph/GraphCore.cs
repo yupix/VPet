@@ -48,7 +48,7 @@ namespace VPet_Simulator.Core
         /// <summary>
         /// 通用设置属性/方法
         /// </summary>
-        public Dictionary<string, dynamic> CommConfig = new Dictionary<string, dynamic>();
+        public Dictionary<string, object> CommConfig = new Dictionary<string, object>();
         /// <summary>
         /// 添加动画
         /// </summary>
@@ -93,7 +93,6 @@ namespace VPet_Simulator.Core
         /// <summary>
         /// 查找动画
         /// </summary>
-        /// <param name="type">动画类型</param>
         /// <param name="GraphName">动画名字</param>
         /// <param name="mode">状态类型,找不到就找相同动画类型</param>
         /// <param name="animat">动画的动作 Start Loop End</param>
@@ -140,7 +139,6 @@ namespace VPet_Simulator.Core
         /// <summary>
         /// 查找动画列表
         /// </summary>
-        /// <param name="type">动画类型</param>
         /// <param name="mode">状态类型,找不到就找相同动画类型</param>
         /// <param name="animat">动画的动作 Start Loop End</param>
         public List<IGraph> FindGraphs(string GraphName, AnimatType animat, GameSave.ModeType mode)

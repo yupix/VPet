@@ -15,8 +15,11 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Web;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 using VPet_Simulator.Core;
 using VPet_Simulator.Windows.Interface;
+using static VPet_Simulator.Core.GraphHelper;
 using static VPet_Simulator.Core.GraphInfo;
 using Timer = System.Timers.Timer;
 using ToolBar = VPet_Simulator.Core.ToolBar;
@@ -45,7 +48,7 @@ namespace VPet_Simulator.Windows
         /// <summary>
         /// 版本号
         /// </summary>
-        public int version { get; } = 101;
+        public int version { get; } = 102;
         /// <summary>
         /// 版本号
         /// </summary>
@@ -97,10 +100,47 @@ namespace VPet_Simulator.Windows
                 return null;
             return list[Function.Rnd.Next(list.Count)];
         }
+        private Image hashcheckimg;
+        public void HashCheckOff()
+        {
+            HashCheck = false;
+        }
         /// <summary>
         /// 存档 Hash检查 是否通过
         /// </summary>
-        public bool HashCheck { get; set; } = true;
+        public bool HashCheck
+        {
+            get => hashCheck;
+            set
+            {
+                hashCheck = value;
+                Main?.Dispatcher.Invoke(() =>
+                {
+                    if (hashCheck)
+                    {
+                        if (hashcheckimg == null)
+                        {
+                            hashcheckimg = new Image();
+                            hashcheckimg.Source = new BitmapImage(new Uri("pack://application:,,,/Res/hash.png"));
+                            hashcheckimg.HorizontalAlignment = HorizontalAlignment.Right;
+                            hashcheckimg.ToolTip = "是没有修改过存档/使用超模MOD的玩家专属标志".Translate();
+                            Grid.SetColumn(hashcheckimg, 4);
+                            Grid.SetRowSpan(hashcheckimg, 2);
+                            Main.ToolBar.gdPanel.Children.Add(hashcheckimg);
+                        }
+                    }
+                    else
+                    {
+                        if (hashcheckimg != null)
+                        {
+                            Main.ToolBar.gdPanel.Children.Remove(hashcheckimg);
+                            hashcheckimg = null;
+                        }
+                    }
+                });
+
+            }
+        }
         public void SetZoomLevel(double zl)
         {
             Set.ZoomLevel = zl;
@@ -257,7 +297,7 @@ namespace VPet_Simulator.Windows
                     if (food.Count == 0)
                         return;
                     var item = food[Function.Rnd.Next(food.Count)];
-                    Core.Save.Money -= item.Price * 1.2;
+                    Core.Save.Money -= item.Price * 0.2;
                     TakeItem(item);
                     Main.Display(GraphType.Eat, item.ImageSource, Main.DisplayToNomal);
                 }
@@ -267,7 +307,7 @@ namespace VPet_Simulator.Windows
                     if (food.Count == 0)
                         return;
                     var item = food[Function.Rnd.Next(food.Count)];
-                    Core.Save.Money -= item.Price * 1.2;
+                    Core.Save.Money -= item.Price * 0.2;
                     TakeItem(item);
                     Main.Display(GraphType.Drink, item.ImageSource, Main.DisplayToNomal);
                 }
@@ -536,6 +576,8 @@ namespace VPet_Simulator.Windows
             if (string.IsNullOrWhiteSpace(line.ToString()))
                 return false;
             Core.Save = GameSave.Load(line);
+            if (Core.Save.Money == 0 && Core.Save.Level == 0 && Core.Save.Likability == 0)//数据全是0,可能是bug
+                return false;
             long hash = line.GetInt64("hash");
             if (line.Remove("hash"))
             {
@@ -702,6 +744,8 @@ namespace VPet_Simulator.Windows
         public bool? CurrMusicType { get; private set; }
 
         int LastDiagnosisTime = 0;
+        private bool hashCheck = true;
+
         /// <summary>
         /// 上传遥测文件
         /// </summary>
@@ -718,7 +762,7 @@ namespace VPet_Simulator.Windows
             if (LastDiagnosisTime++ < Set.DiagnosisInterval)
                 return;//等待间隔
             LastDiagnosisTime = 0;
-            string _url = "http://cn.exlb.org:5810/Report";
+            string _url = "http://cn.exlb.org:5810/VPET/Report";
             //参数
             StringBuilder sb = new StringBuilder();
             sb.Append("action=data");
@@ -761,5 +805,30 @@ namespace VPet_Simulator.Windows
         /// 关闭指示器,默认为true
         /// </summary>
         public bool CloseConfirm { get; private set; } = true;
+        /// <summary>
+        /// 超模工作检查
+        /// </summary>
+        public bool WorkCheck(Work work)
+        {
+            //看看是否超模
+            if (HashCheck && work.IsOverLoad())
+            {
+                var spend = (Math.Pow(work.StrengthFood * 2 + 1, 2) / 6 + Math.Pow(work.StrengthDrink * 2 + 1, 2) / 9 +
+               Math.Pow(work.Feeling * 2 + 1, 2) / 12) * (Math.Pow(work.LevelLimit / 2 + 1, 0.5) / 4 + 1) - 0.5;
+                var get = (work.MoneyBase + work.MoneyLevel * 10) * (work.MoneyLevel + 1) * (1 + work.FinishBonus / 2);
+                if (work.Type != Work.WorkType.Work)
+                {
+                    get /= 12;//经验值换算
+                }
+                var rel = get / spend;
+                if (MessageBoxX.Show("当前工作数据属性超模,是否继续工作?\n超模工作可能会导致游戏发生不可预料的错误\n超模工作不影响大部分成就解锁\n当前数据比率 {0:f2}\n推荐比率<1.5"
+                    .Translate(rel), "超模工作提醒".Translate(), MessageBoxButton.YesNo) != MessageBoxResult.Yes)
+                {
+                    return false;
+                }
+                HashCheck = false;
+            }
+            return true;
+        }
     }
 }

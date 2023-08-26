@@ -29,6 +29,7 @@ using static VPet_Simulator.Core.GraphInfo;
 using System.Globalization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 using System.Diagnostics.Eventing.Reader;
+using static VPet_Simulator.Windows.Interface.ExtensionFunction;
 
 namespace VPet_Simulator.Windows
 {
@@ -64,64 +65,75 @@ namespace VPet_Simulator.Windows
             {
                 IsSteamUser = false;
             }
-
-            //加载游戏设置
-            if (new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"\Setting.lps").Exists)
+            try
             {
-                Set = new Setting(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\Setting.lps"));
-            }
-            else
-                Set = new Setting("Setting#VPET:|\n");
-
-            var visualTree = new FrameworkElementFactory(typeof(Border));
-            visualTree.SetValue(Border.BackgroundProperty, new TemplateBindingExtension(Window.BackgroundProperty));
-            var childVisualTree = new FrameworkElementFactory(typeof(ContentPresenter));
-            childVisualTree.SetValue(UIElement.ClipToBoundsProperty, true);
-            visualTree.AppendChild(childVisualTree);
-
-            Template = new ControlTemplate
-            {
-                TargetType = typeof(Window),
-                VisualTree = visualTree,
-            };
-
-            _dwmEnabled = Win32.Dwmapi.DwmIsCompositionEnabled();
-            _hwnd = new WindowInteropHelper(this).EnsureHandle();
-
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\ChatGPTSetting.json"))
-                CGPTClient = ChatGPTClient.Load(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\ChatGPTSetting.json"));
-            //this.Width = 400 * ZoomSlider.Value;
-            //this.Height = 450 * ZoomSlider.Value;
-            InitializeComponent();
-
-            //this.Height = 500 * Set.ZoomLevel;
-            this.Width = 500 * Set.ZoomLevel;
-
-            if (Set.StartRecordLast)
-            {
-                var point = Set.StartRecordLastPoint;
-                if (point.X != 0 || point.Y != 0)
+                //加载游戏设置
+                if (new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"\Setting.lps").Exists)
                 {
-                    this.Left = point.X;
-                    this.Top = point.Y;
+                    Set = new Setting(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\Setting.lps"));
                 }
-            }
-            else
-            {
-                var point = Set.StartRecordPoint;
-                Left = point.X; Top = point.Y;
-            }
+                else
+                    Set = new Setting("Setting#VPET:|\n");
 
-            //不存在就关掉
-            var modpath = new DirectoryInfo(ModPath + @"\0000_core\pet\vup");
-            if (!modpath.Exists)
-            {
-                MessageBox.Show("缺少模组Core,无法启动桌宠".Translate(), "启动错误".Translate(), MessageBoxButton.OK, MessageBoxImage.Error);
-                Close();
-                return;
+                var visualTree = new FrameworkElementFactory(typeof(Border));
+                visualTree.SetValue(Border.BackgroundProperty, new TemplateBindingExtension(Window.BackgroundProperty));
+                var childVisualTree = new FrameworkElementFactory(typeof(ContentPresenter));
+                childVisualTree.SetValue(UIElement.ClipToBoundsProperty, true);
+                visualTree.AppendChild(childVisualTree);
+
+                Template = new ControlTemplate
+                {
+                    TargetType = typeof(Window),
+                    VisualTree = visualTree,
+                };
+
+                _dwmEnabled = Win32.Dwmapi.DwmIsCompositionEnabled();
+                _hwnd = new WindowInteropHelper(this).EnsureHandle();
+
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\ChatGPTSetting.json"))
+                    CGPTClient = ChatGPTClient.Load(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"\ChatGPTSetting.json"));
+                //this.Width = 400 * ZoomSlider.Value;
+                //this.Height = 450 * ZoomSlider.Value;
+                InitializeComponent();
+
+                //this.Height = 500 * Set.ZoomLevel;
+                this.Width = 500 * Set.ZoomLevel;
+
+                if (Set.StartRecordLast)
+                {
+                    var point = Set.StartRecordLastPoint;
+                    if (point.X != 0 || point.Y != 0)
+                    {
+                        this.Left = point.X;
+                        this.Top = point.Y;
+                    }
+                }
+                else
+                {
+                    var point = Set.StartRecordPoint;
+                    Left = point.X; Top = point.Y;
+                }
+
+                //不存在就关掉
+                var modpath = new DirectoryInfo(ModPath + @"\0000_core\pet\vup");
+                if (!modpath.Exists)
+                {
+                    MessageBox.Show("缺少模组Core,无法启动桌宠".Translate(), "启动错误".Translate(), MessageBoxButton.OK, MessageBoxImage.Error);
+                    Environment.Exit(0);
+                    return;
+                }
+                Closed += ForceClose;
+                Task.Run(GameLoad);
             }
-            Closed += ForceClose;
-            Task.Run(GameLoad);
+            catch (Exception e)
+            {
+                string errstr = "游戏发生错误,可能是".Translate() + (string.IsNullOrWhiteSpace(CoreMOD.NowLoading) ?
+              "游戏或者MOD".Translate() : $"MOD({CoreMOD.NowLoading})") +
+              "导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n".Translate()
+              + e.ToString();
+                MessageBox.Show(errstr, "游戏致命性错误".Translate() + ' ' + "启动错误".Translate(), MessageBoxButton.OK, MessageBoxImage.Error);
+                Environment.Exit(0);
+            }
         }
         public new void Close()
         {
@@ -330,6 +342,18 @@ namespace VPet_Simulator.Windows
                 Directory.Move(AppDomain.CurrentDomain.BaseDirectory + @"\UserData", AppDomain.CurrentDomain.BaseDirectory + @"\BackUP");
             }
 
+            //加载数据合理化:食物
+            if (!Set["gameconfig"].GetBool("noAutoCal"))
+            {
+                foreach (Food f in Foods)
+                {
+                    if (f.IsOverLoad())
+                    {
+                        f.Price = Math.Max((int)f.RealPrice, 1);
+                    }
+                }
+            }
+
 
             await Dispatcher.InvokeAsync(new Action(() => LoadingText.Content = "尝试加载游戏MOD".Translate()));
 
@@ -347,7 +371,14 @@ namespace VPet_Simulator.Windows
 
             AutoSaveTimer.Elapsed += AutoSaveTimer_Elapsed;
 
-            if (Set.AutoSaveInterval > 0)
+            if(Set.Statistics[(gdbe)"stat_bb_food"] < 0 || Set.Statistics[(gdbe)"stat_bb_drink"] < 0 || Set.Statistics[(gdbe)"stat_bb_drug"] < 0
+                || Set.Statistics[(gdbe)"stat_bb_snack"] < 0 || Set.Statistics[(gdbe)"stat_bb_functional"] < 0 || Set.Statistics[(gdbe)"stat_bb_meal"] < 0
+                || Set.Statistics[(gdbe)"stat_bb_gift"] < 0)
+            {
+                hashCheck = false;
+            }
+
+                if (Set.AutoSaveInterval > 0)
             {
                 AutoSaveTimer.Interval = Set.AutoSaveInterval * 60000;
                 AutoSaveTimer.Start();
@@ -402,6 +433,34 @@ namespace VPet_Simulator.Windows
                 Core.Graph = petloader.Graph(Set.Resolution);
                 Main = new Main(Core);
                 Main.NoFunctionMOD = Set.CalFunState;
+
+                //加载数据合理化:工作
+                if (!Set["gameconfig"].GetBool("noAutoCal"))
+                {
+                    foreach (var work in Core.Graph.GraphConfig.Works)
+                    {
+                        if (work.IsOverLoad())
+                        {
+                            work.MoneyLevel = 0.5;
+                            work.MoneyBase = 8;
+                            if (work.Type == GraphHelper.Work.WorkType.Work)
+                            {
+                                work.StrengthDrink = 2.5;
+                                work.StrengthFood = 3.5;
+                                work.Feeling = 1.5;
+                                work.FinishBonus = 0;
+                            }
+                            else
+                            {
+                                work.Feeling = 1;
+                                work.FinishBonus = 0;
+                                work.StrengthDrink = 1;
+                                work.StrengthFood = 1;
+                            }
+                        }
+                    }
+                }
+
                 LoadingText.Content = "正在加载CGPT".Translate();
                 switch (Set["CGPT"][(gstr)"type"])
                 {
@@ -524,6 +583,8 @@ namespace VPet_Simulator.Windows
                 if (Set.MessageBarOutside)
                     Main.MsgBar.SetPlaceOUT();
 
+                Main.ToolBar.WorkCheck = WorkCheck;
+
                 //加载图标
                 notifyIcon = new NotifyIcon();
                 notifyIcon.Text = "虚拟桌宠模拟器".Translate();
@@ -582,6 +643,8 @@ namespace VPet_Simulator.Windows
                 Main.Event_TouchHead += Main_Event_TouchHead;
                 Main.Event_TouchBody += Main_Event_TouchBody;
 
+                HashCheck = hashCheck;
+
                 if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\Tutorial.html") && Set["SingleTips"].GetDateTime("tutorial") <= new DateTime(2023, 6, 20))
                 {
                     Set["SingleTips"].SetDateTime("tutorial", DateTime.Now);
@@ -627,7 +690,7 @@ namespace VPet_Simulator.Windows
                 foreach (CoreMOD cm in CoreMODs)
                     if (!cm.SuccessLoad)
                         if (cm.Tag.Contains("该模组已损坏"))
-                            MessageBoxX.Show("模组 {0} 插件损坏\n虚拟桌宠模拟器未能成功加载该插件\n请联系作者修复该问题".Translate(cm.Name), "{0} 未加载代码插件".Translate(cm.Name));
+                            MessageBoxX.Show("模组 {0} 插件损坏\n虚拟桌宠模拟器未能成功加载该插件\n请联系作者修复该问题".Translate(cm.Name), "该模组已损坏".Translate());
                         else if (Set.IsPassMOD(cm.Name))
                             MessageBoxX.Show("模组 {0} 的代码插件损坏\n虚拟桌宠模拟器未能成功加载该插件\n请联系作者修复该问题".Translate(cm.Name), "{0} 未加载代码插件".Translate(cm.Name));
                         else if (Set.IsMSGMOD(cm.Name))
