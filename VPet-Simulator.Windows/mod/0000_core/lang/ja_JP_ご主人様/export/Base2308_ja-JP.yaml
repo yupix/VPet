@@ -1,3 +1,4 @@
+---
 关闭聊天框: チャットボックスを閉じる
 当前存档Hash验证信息: 現在のセーブハッシュの検証
 操作: 操作
@@ -6,13 +7,14 @@
 通过: 合格
 失败: 失敗
 自定义聊天接口: カスタムチャットインターフェース
-聊天框已关闭: Chat Box Closed
+聊天框已关闭: チャットボックスは閉じています
 尝试加载游戏存档: ゲームのアーカイブをロードしようとしています
 尝试加载Steam内容: Steam コンテンツをロードしようとしています
-尝试加载游戏动画: ゲームのアニメーションを読み込んでみる
 有效度: 有効性
 喜好度: 好感度
-桌宠图形渲染的分辨率,越高图形越清晰\r但是高分辨率会占用更多内存\r重启后生效: The resolution at which the graphics are rendered on the table favor,the higher the graphics the clearer they are\r but higher resolutions will take up more memory\r it will take effect after a restart
+桌宠图形渲染的分辨率,越高图形越清晰\r但是高分辨率会占用更多内存\r重启后生效: The resolution at which the graphics are
+  rendered on the table favor,the higher the graphics the clearer they are\r but higher
+  resolutions will take up more memory\r it will take effect after a restart
 渲染分辨率: レンダリング解像度
 清理缓存: キャッシュの消去
 清理缓存的动画,声音文件: アニメーションとサウンド ファイルのキャッシュをクリアします。
@@ -28,10 +30,14 @@ Nomally: 通常
 PoorConditionly: 悲しみ
 Illly: 病気
 plugin: プラグイン
-MOD加载错误,是MOD({0})导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n: 'MOD loading error, caused by MOD({0})\nIf possible, Please send a screenshot of the error message and the action you took before triggering the error to developer: service@exlb.net\nThanks for your support of the game development\n'
+? MOD加载错误,是MOD({0})导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
+: 'MOD loading error, caused by MOD({0})\nIf possible, Please send a screenshot of
+  the error message and the action you took before triggering the error to developer:
+  service@exlb.net\nThanks for your support of the game development\n'
 游戏发生错误,可能是: ゲームでエラーが発生した可能性があります。
 游戏致命性错误: ゲームの致命的なエラー
 游戏或者MOD: ゲームまたは MOD
-导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n: 导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
+? 导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
+: 导致的\n如有可能请发送 错误信息截图和引发错误之前的操作 给开发者:service@exlb.net\n感谢您对游戏开发的支持\n
 清理指令已下达,下次启动桌宠时生效: cleanup コマンドが発行されました。次回VPetが開始される時に有効になります。
 服务器超载,请稍后重试: サーバーの過負荷状態です。\r後でもう一度お試しください。
